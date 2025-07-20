@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale-1.0">
+        <title>Video Belajar-registers</title>
+        <link
+        rel="shortcut icon"
+        href="./img/video-belajar-logo.png" type="image/x-icon" >
+        <link rel="stylesheet" href="../styles/auth.css">
+</head>
+<body class="body">
+    <main class="container"> 
+        <div class="header"> 
+            <img class="logo" src="../img/Logo.png" alt="logo">
+           <div class="header-title">
+            <h1>Pendaftaran Akun</h1>
+            <p>Yuk daftarkan akunmu sekarang juga!</p>
+           </div>
+        </div>  
+    <form class="form-container">
+        <div class="form-input">
+            <label for="username">Nama Lengkap<span style="color: red;">*</span></label>  
+            <input 
+            type="text"
+            name="username"
+            id="username"
+            required>
+        </div>
+        <div class="form-input">
+            <label for="email">E-mail<span style="color: red;">*</span></label>  
+            <input 
+            type="email"
+            name="email"
+            id="email"
+            required>
+        </div>
+        <div class="form-input">
+        <label for="gender">Jenis Kelamin<span style="color: red;">*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="Wanita" selected>Wanita</option>
+                    <option value="Pria">Pria</option>
+                </select>
+            </div>
+        
+         <div class="form-input"></div>
+            <label for="phone-number">No.Hp<span style="color: red;">*</span></label>
+            <div class="phone-wrapper">
+                 <div class="country-flag">
+          <!-- Bendera Indonesia 🇮🇩 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 3 2">
+            <rect width="3" height="1" fill="#e70000"/>
+            <rect y="1" width="3" height="1" fill="#fff"/>
+          </svg>
+        </div>
+                <select id="country-code" name="country-code" required>
+                    <option value="+62" selected>+62</option>
+                    <option value="+60">+60</option>
+                    <option value="+65">+65</option>
+                        <option value="+1">+1</option>
+                </select>
+                <input type="tel" id="phone-number" name="phone-number" required>
+      </div>
+            
+
+        <div class="form-input">
+            <label for="password">Kata sandi<span style="color: red;">*</span></label>
+            <input 
+            type="password"
+            name="password"
+            id="password"
+            required>
+            <img src="../img/eye-icon.png" alt="eye-icon-password">
+        </div>
+         <div class="form-input">
+            <label for="confirm-password">Konfrimasi Kata sandi<span style="color: red;">*</span></label>
+            <input 
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            required>
+            <img src="../img/eye-icon.png" alt="eye-icon-password">
+        </div>
+        <div class="form-additional-info">
+            <a href="#">Lupa Password?</a>
+        </div>
+        <div class="form-action">
+            <button type="submit">Masuk</button>
+            <!-- <button type="submit">Daftar</button> -->
+            <a href="./pages/register.html" class="button-register">Daftar</a>    
+        </div>
+
+        <div class="form-action-google">
+            <div class="divider">atau</div>
+            <button type="submit">
+                <img src="../img/google-icon.png" alt="">Masuk dengan Google</button>
+        </div>       
+            </form>
+
+    </div>
+    </main>
+</body>
+</html>
